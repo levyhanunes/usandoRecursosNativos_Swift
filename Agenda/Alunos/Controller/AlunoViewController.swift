@@ -57,6 +57,23 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
         self.scrollViewPrincipal.contentSize = CGSize(width: self.scrollViewPrincipal.frame.width, height: self.scrollViewPrincipal.frame.height + self.scrollViewPrincipal.frame.height/2)
     }
     
+    func mostrarMultmidia(_ opcao:MenuOpcoes) {
+        let multimidia = UIImagePickerController()
+        multimidia.delegate = imagePicker
+        
+        if opcao == .camera && UIImagePickerController.isSourceTypeAvailable(.camera) {
+            multimidia.sourceType = .camera
+        }else {
+            multimidia.sourceType = .photoLibrary
+        }
+        self.present(multimidia, animated: true, completion: nil)
+        
+            
+            
+            
+        
+    }
+    
     // MARK: - Delegate
     
     func imagePickerFotoSelecionada(_ foto: UIImage) {
@@ -66,12 +83,13 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
     // MARK: - IBActions
     
     @IBAction func buttonFoto(_ sender: UIButton) {
-        if UIImagePickerController.isSourceTypeAvailable(.camera){
-            let multimidia = UIImagePickerController()
-            multimidia.sourceType = .camera
-            multimidia.delegate = imagePicker
-            self.present(multimidia, animated: true, completion: nil)
+        
+        
+        
+        let menu = ImagePicker().menuDeOpcoes { opcao in
+            self.mostrarMultmidia(opcao)
         }
+        present(menu, animated: true, completion: nil)
         
     }
     
