@@ -17,6 +17,7 @@
 		03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA176C1FC8515A003CB2B8 /* AlunoViewController.swift */; };
 		CE8CDCEA2670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.38.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8CDCE82670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.38.png */; };
 		CE8CDCEB2670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.34.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8CDCE92670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.34.png */; };
+		CE8CDCEE2670FDFB001518BE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CDCED2670FDFB001518BE /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		03AA176C1FC8515A003CB2B8 /* AlunoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoViewController.swift; sourceTree = "<group>"; };
 		CE8CDCE82670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.38.png"; sourceTree = "<group>"; };
 		CE8CDCE92670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.34.png"; sourceTree = "<group>"; };
+		CE8CDCED2670FDFB001518BE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		03AA174C1FC84154003CB2B8 /* Agenda */ = {
 			isa = PBXGroup;
 			children = (
+				CE8CDCEC2670FDDF001518BE /* Componentes */,
 				03AA174D1FC84154003CB2B8 /* AppDelegate.swift */,
 				03AA17621FC8433E003CB2B8 /* Home */,
 				03AA17691FC84A2D003CB2B8 /* Alunos */,
@@ -125,6 +128,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CE8CDCEC2670FDDF001518BE /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				CE8CDCED2670FDFB001518BE /* ImagePicker.swift */,
+			);
+			path = Componentes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */,
 				03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */,
 				03AA17561FC84154003CB2B8 /* Agenda.xcdatamodeld in Sources */,
+				CE8CDCEE2670FDFB001518BE /* ImagePicker.swift in Sources */,
 				03AA17681FC843B1003CB2B8 /* HomeTableViewCell.swift in Sources */,
 				03AA174E1FC84154003CB2B8 /* AppDelegate.swift in Sources */,
 			);
