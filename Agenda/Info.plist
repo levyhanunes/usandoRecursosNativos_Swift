@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Esse aplicativo precisa utilizar a camera para preencher o formulário</string>
+	<string>Este aplicativo precisa utilizar a camera para preencher o formulario</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

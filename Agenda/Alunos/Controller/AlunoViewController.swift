@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
     
@@ -23,10 +24,14 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
     @IBOutlet weak var textFieldSite: UITextField!
     @IBOutlet weak var textFieldNota: UITextField!
     
-    
     // MARK: - Atributos
     
+    var contexto:NSManagedObjectContext {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
+    }
     let imagePicker = ImagePicker()
+    var aluno:Aluno?
     
     // MARK: - View Lifecycle
 
@@ -37,14 +42,17 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
         NotificationCenter.default.addObserver(self, selector: #selector(aumentarScrollView(_:)), name: .UIKeyboardWillShow, object: nil)
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
     // MARK: - Métodos
     
-    func setup(){
+    func setup() {
         imagePicker.delegate = self
+        guard let alunoSelecionado = aluno else { return }
+        textFieldNome.text = alunoSelecionado.nome
+        textFieldEndereco.text = alunoSelecionado.endereco
+        textFieldTelefone.text = alunoSelecionado.telefone
+        textFieldSite.text = alunoSelecionado.site
+        textFieldNota.text = "\(alunoSelecionado.nota)"
+        imageAluno.image = alunoSelecionado.foto as? UIImage
     }
     
     func arredondaView() {
@@ -57,21 +65,17 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
         self.scrollViewPrincipal.contentSize = CGSize(width: self.scrollViewPrincipal.frame.width, height: self.scrollViewPrincipal.frame.height + self.scrollViewPrincipal.frame.height/2)
     }
     
-    func mostrarMultmidia(_ opcao:MenuOpcoes) {
+    func mostrarMultimidia(_ opcao:MenuOpcoes) {
         let multimidia = UIImagePickerController()
         multimidia.delegate = imagePicker
         
         if opcao == .camera && UIImagePickerController.isSourceTypeAvailable(.camera) {
             multimidia.sourceType = .camera
-        }else {
+        }
+        else {
             multimidia.sourceType = .photoLibrary
         }
         self.present(multimidia, animated: true, completion: nil)
-        
-            
-            
-            
-        
     }
     
     // MARK: - Delegate
@@ -84,18 +88,33 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
     
     @IBAction func buttonFoto(_ sender: UIButton) {
         
-        
-        
-        let menu = ImagePicker().menuDeOpcoes { opcao in
-            self.mostrarMultmidia(opcao)
+        let menu = ImagePicker().menuDeOpcoes { (opcao) in
+            self.mostrarMultimidia(opcao)
         }
         present(menu, animated: true, completion: nil)
-        
     }
     
     @IBAction func stepperNota(_ sender: UIStepper) {
         self.textFieldNota.text = "\(sender.value)"
     }
     
+    @IBAction func buttonSalvar(_ sender: UIButton) {
+        if aluno == nil {
+            aluno = Aluno(context: contexto)
+        }
+        aluno?.nome = textFieldNome.text
+        aluno?.endereco = textFieldEndereco.text
+        aluno?.telefone = textFieldTelefone.text
+        aluno?.site = textFieldSite.text
+        aluno?.nota = (textFieldNota.text! as NSString).doubleValue
+        aluno?.foto = imageAluno.image
+        
+        do {
+            try contexto.save()
+            navigationController?.popViewController(animated: true)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
     
 }

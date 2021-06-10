@@ -15,10 +15,7 @@
 		03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA17651FC84353003CB2B8 /* HomeTableViewController.swift */; };
 		03AA17681FC843B1003CB2B8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA17671FC843B1003CB2B8 /* HomeTableViewCell.swift */; };
 		03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA176C1FC8515A003CB2B8 /* AlunoViewController.swift */; };
-		CE8CDCEA2670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.38.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8CDCE82670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.38.png */; };
-		CE8CDCEB2670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.34.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8CDCE92670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.34.png */; };
-		CE8CDCEE2670FDFB001518BE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CDCED2670FDFB001518BE /* ImagePicker.swift */; };
-		CEF1E436267132EF0009BB58 /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 14.32.56.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF1E435267132EE0009BB58 /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 14.32.56.png */; };
+		A281001A1FD5C2F700E1BDF1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28100191FD5C2F700E1BDF1 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +29,7 @@
 		03AA17651FC84353003CB2B8 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		03AA17671FC843B1003CB2B8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		03AA176C1FC8515A003CB2B8 /* AlunoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoViewController.swift; sourceTree = "<group>"; };
-		CE8CDCE82670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.38.png"; sourceTree = "<group>"; };
-		CE8CDCE92670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.34.png"; sourceTree = "<group>"; };
-		CE8CDCED2670FDFB001518BE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		CEF1E435267132EE0009BB58 /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 14.32.56.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 14.32.56.png"; path = "../../../Desktop/Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 14.32.56.png"; sourceTree = "<group>"; };
+		A28100191FD5C2F700E1BDF1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,15 +62,12 @@
 		03AA174C1FC84154003CB2B8 /* Agenda */ = {
 			isa = PBXGroup;
 			children = (
-				CE8CDCEC2670FDDF001518BE /* Componentes */,
 				03AA174D1FC84154003CB2B8 /* AppDelegate.swift */,
 				03AA17621FC8433E003CB2B8 /* Home */,
 				03AA17691FC84A2D003CB2B8 /* Alunos */,
+				A28100181FD5C2E300E1BDF1 /* Componentes */,
 				03AA17511FC84154003CB2B8 /* Main.storyboard */,
 				03AA17571FC84154003CB2B8 /* Assets.xcassets */,
-				CEF1E435267132EE0009BB58 /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 14.32.56.png */,
-				CE8CDCE92670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.34.png */,
-				CE8CDCE82670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.38.png */,
 				03AA17591FC84154003CB2B8 /* LaunchScreen.storyboard */,
 				03AA175C1FC84154003CB2B8 /* Info.plist */,
 				03AA17541FC84154003CB2B8 /* Agenda.xcdatamodeld */,
@@ -112,7 +103,6 @@
 		03AA17691FC84A2D003CB2B8 /* Alunos */ = {
 			isa = PBXGroup;
 			children = (
-				03AA176B1FC84A2D003CB2B8 /* View */,
 				03AA176A1FC84A2D003CB2B8 /* Controller */,
 			);
 			path = Alunos;
@@ -126,17 +116,10 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		03AA176B1FC84A2D003CB2B8 /* View */ = {
+		A28100181FD5C2E300E1BDF1 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CE8CDCEC2670FDDF001518BE /* Componentes */ = {
-			isa = PBXGroup;
-			children = (
-				CE8CDCED2670FDFB001518BE /* ImagePicker.swift */,
+				A28100191FD5C2F700E1BDF1 /* ImagePicker.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -202,9 +185,6 @@
 			files = (
 				03AA175B1FC84154003CB2B8 /* LaunchScreen.storyboard in Resources */,
 				03AA17581FC84154003CB2B8 /* Assets.xcassets in Resources */,
-				CEF1E436267132EF0009BB58 /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 14.32.56.png in Resources */,
-				CE8CDCEB2670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.34.png in Resources */,
-				CE8CDCEA2670EE80001518BE /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-09 at 09.36.38.png in Resources */,
 				03AA17531FC84154003CB2B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +199,7 @@
 				03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */,
 				03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */,
 				03AA17561FC84154003CB2B8 /* Agenda.xcdatamodeld in Sources */,
-				CE8CDCEE2670FDFB001518BE /* ImagePicker.swift in Sources */,
+				A281001A1FD5C2F700E1BDF1 /* ImagePicker.swift in Sources */,
 				03AA17681FC843B1003CB2B8 /* HomeTableViewCell.swift in Sources */,
 				03AA174E1FC84154003CB2B8 /* AppDelegate.swift in Sources */,
 			);
