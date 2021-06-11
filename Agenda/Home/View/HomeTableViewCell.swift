@@ -14,11 +14,11 @@ class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imageAluno: UIImageView!
     @IBOutlet weak var labelNomeDoAluno: UILabel!
+    @IBOutlet weak var viewImagem: UIView!
     
     func configuraCelula(_ aluno:Aluno) {
         labelNomeDoAluno.text = aluno.nome
-        imageAluno.layer.cornerRadius = imageAluno.frame.width / 2
-        imageAluno.layer.masksToBounds = true
+        viewImagem.layer.cornerRadius = imageAluno.frame.width / 2
         if let imagemDoAluno = aluno.foto as? UIImage {
             imageAluno.image = imagemDoAluno
         }

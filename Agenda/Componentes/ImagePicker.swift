@@ -48,17 +48,4 @@ class ImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigationContro
         
         return menu
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 }
