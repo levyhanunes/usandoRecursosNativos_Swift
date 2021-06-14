@@ -109,6 +109,7 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
                     
                     self.navigationController?.pushViewController(mapa, animated: true)
                     break
+<<<<<<< HEAD
                 case .abrirPaginaWeb:
                     
                     if let urlDoAluno = alunoSelecionado.site {
@@ -125,6 +126,8 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
                     }
                     
                     break
+=======
+>>>>>>> 7916cb3353c90ee871ccfc2977e3943225b83406
                 }
             })
             self.present(menu, animated: true, completion: nil)
@@ -203,6 +206,7 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
             print(error.localizedDescription)
         }
     }
+<<<<<<< HEAD
     
     @IBAction func buttonLocalizacaoGeral(_ sender: UIBarButtonItem) {
         let mapa = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mapa") as! MapaViewController
@@ -223,4 +227,6 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
     }
     
     
+=======
+>>>>>>> 7916cb3353c90ee871ccfc2977e3943225b83406
 }

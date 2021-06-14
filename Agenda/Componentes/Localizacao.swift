@@ -7,9 +7,15 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 import MapKit
 
 class Localizacao: NSObject, MKMapViewDelegate {
+=======
+import CoreLocation
+
+class Localizacao: NSObject {
+>>>>>>> 7916cb3353c90ee871ccfc2977e3943225b83406
     
     func converteEnderecoEmCoordenadas(endereco:String, local:@escaping(_ local:CLPlacemark) -> Void) {
         let conversor = CLGeocoder()
@@ -19,6 +25,7 @@ class Localizacao: NSObject, MKMapViewDelegate {
             }
         }
     }
+<<<<<<< HEAD
     
     func configuraPino(titulo:String, localizacao:CLPlacemark, cor:UIColor?, icone:UIImage?) -> Pino {
         let pino = Pino(coordenada: localizacao.location!.coordinate)
@@ -51,5 +58,7 @@ class Localizacao: NSObject, MKMapViewDelegate {
         }
         return nil
     }
+=======
+>>>>>>> 7916cb3353c90ee871ccfc2977e3943225b83406
 
 }

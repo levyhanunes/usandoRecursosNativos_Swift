@@ -73,11 +73,15 @@
                                     <action selector="buttonCalculaMedia:" destination="Qhi-kM-lyB" id="Clb-FF-lQn"/>
                                 </connections>
                             </barButtonItem>
+<<<<<<< HEAD
                             <barButtonItem systemItem="search" id="eTQ-eO-deP">
                                 <connections>
                                     <action selector="buttonLocalizacaoGeral:" destination="Qhi-kM-lyB" id="lLQ-9X-9kO"/>
                                 </connections>
                             </barButtonItem>
+=======
+                            <barButtonItem systemItem="search" id="eTQ-eO-deP"/>
+>>>>>>> 7916cb3353c90ee871ccfc2977e3943225b83406
                         </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4cp-jd-Mnv">
                             <connections>

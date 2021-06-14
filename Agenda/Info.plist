@@ -56,9 +56,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+<<<<<<< HEAD
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>waze</string>
 	</array>
+=======
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>waze</string>
+    </array>
+>>>>>>> 7916cb3353c90ee871ccfc2977e3943225b83406
 </dict>
 </plist>

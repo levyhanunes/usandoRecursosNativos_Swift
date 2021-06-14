@@ -161,7 +161,10 @@
 				B939B9B71FDAC2630084A557 /* Mensagem.swift */,
 				B9EA19FA1FDEBEAD00403CE0 /* Localizacao.swift */,
 				B9D565A61FE14ECA00BDA536 /* Notificacoes.swift */,
+<<<<<<< HEAD
 				658B1AA72006456B006D944C /* AutenticacaoLocal.swift */,
+=======
+>>>>>>> 7916cb3353c90ee871ccfc2977e3943225b83406
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -177,7 +180,10 @@
 		B9FFD44E1FDEE6D300CEE593 /* Mapa */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				65F277D72006900E00A8F1BF /* Model */,
+=======
+>>>>>>> 7916cb3353c90ee871ccfc2977e3943225b83406
 				B9FFD44F1FDEE6E200CEE593 /* Controller */,
 			);
 			path = Mapa;
@@ -277,7 +283,10 @@
 				B9FFD4511FDEE6F700CEE593 /* MapaViewController.swift in Sources */,
 				03AA174E1FC84154003CB2B8 /* AppDelegate.swift in Sources */,
 				B9EA19FB1FDEBEAD00403CE0 /* Localizacao.swift in Sources */,
+<<<<<<< HEAD
 				658B1AA82006456B006D944C /* AutenticacaoLocal.swift in Sources */,
+=======
+>>>>>>> 7916cb3353c90ee871ccfc2977e3943225b83406
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
